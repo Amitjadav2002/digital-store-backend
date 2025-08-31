@@ -1,0 +1,9 @@
+{
+  "name": "digital-store-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "razorpay": "^2.9.2"
+  }
+}
