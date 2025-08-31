@@ -39,7 +39,6 @@ export default async function handler(req, res) {
             notify: { email: true, sms: false },
             callback_url: `https://digital-store-pearl.vercel.app/download?purchaseId=${purchaseID}`,
             callback_method: "get",
-            expire_by: Math.floor(Date.now() / 1000) + 5 * 60,
         };
 
         const paymentLink = await razorpay.paymentLink.create(options);
